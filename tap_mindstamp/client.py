@@ -13,6 +13,8 @@ SCHEMAS_DIR = Path(__file__).parent / Path("./schemas")
 class MindstampStream(RESTStream):
     """Mindstamp stream class."""
 
+    # _LOG_REQUEST_METRIC_URLS = True
+
     @property
     def url_base(self) -> str:
         """Return the API URL root, configurable via tap settings."""
@@ -34,6 +36,13 @@ class MindstampStream(RESTStream):
         self, response: requests.Response, previous_token: Optional[Any]
     ) -> Optional[Any]:
         """Return a token for identifying next page or None if no more pages."""
+        if response is None:
+            return None
+
+        data = response.json()
+        if not data:
+            return None
+        
         if self.has_pagination:
             previous_token = previous_token or 0
 
