@@ -1,0 +1,81 @@
+{
+    "type": [
+        "null",
+        "object"
+    ],
+    "selected": true,
+    "additionalProperties": false,
+    "properties": {
+        "id": {
+            "type": [
+                "null",
+                "string"
+            ]
+        },
+        "owner_id": {
+            "type": [
+                "null",
+                "string"
+            ]
+        },
+        "organization_id": {
+            "type": [
+                "null",
+                "string"
+            ]
+        },
+        "token": {
+            "type": [
+                "null",
+                "string"
+            ]
+        },
+        "title": {
+            "type": [
+                "null",
+                "string"
+            ]
+        },
+        "message": {
+            "type": [
+                "null",
+                "string"
+            ]
+        },
+        "duration": {
+            "type": [
+                "null",
+                "integer"
+            ]
+        },
+        "link": {
+            "type": [
+                "null",
+                "string"
+            ]
+        },
+        "thumbnail": {
+            "type": [
+                "null",
+                "string"
+            ]
+        },
+        "created_at": {
+            "type": [
+                "null",
+                "string"
+            ],
+            "format": "date-time"
+        },
+        "updated_at": {
+            "type": [
+                "null",
+                "string"
+            ],
+            "format": "date-time"
+        }
+    },
+    "key_properties": [
+        "id"
+    ]
+}

@@ -1,0 +1,204 @@
+{
+    "type": [
+        "null",
+        "object"
+    ],
+    "selected": true,
+    "additionalProperties": false,
+    "properties": {
+        "id": {
+            "type": [
+                "null",
+                "string"
+            ]
+        },
+        "video_title": {
+            "type": [
+                "null",
+                "string"
+            ]
+        },
+        "type_of": {
+            "type": [
+                "null",
+                "string"
+            ]
+        },
+        "value": {
+            "type": [
+                "null",
+                "string"
+            ]
+        },
+        "time": {
+            "type": [
+                "null",
+                "integer"
+            ]
+        },
+        "finish": {
+            "type": [
+                "null",
+                "integer"
+            ]
+        },
+        "parent_id": {
+            "type": [
+                "null",
+                "string"
+            ]
+        },
+        "parent_type": {
+            "type": [
+                "null",
+                "string"
+            ]
+        },
+        "parent_value": {
+            "type": [
+                "null",
+                "string"
+            ]
+        },
+        "click_action": {
+            "type": [
+                "null",
+                "string"
+            ]
+        },
+        "click_value": {
+            "type": [
+                "null",
+                "string"
+            ]
+        },
+        "viewer_name": {
+            "type": [
+                "null",
+                "string"
+            ]
+        },
+        "viewer_email": {
+            "type": [
+                "null",
+                "string"
+            ]
+        },
+        "viewer_phone": {
+            "type": [
+                "null",
+                "string"
+            ]
+        },
+        "viewer_custom_id": {
+            "type": [
+                "null",
+                "string"
+            ]
+        },
+        "style": {
+            "type": [
+                "null",
+                "string"
+            ]
+        },
+        "answers": {
+            "anyOf": [
+                {
+                  "type": "null"
+                },
+                {
+                  "type": "array",
+                  "items": {
+                    "type": ["null", "integer"]
+                  }
+                }
+              ]
+        },
+        "correct_answer": {
+            "type": [
+                "null",
+                "string"
+            ]
+        },
+        "correct": {
+            "type": [
+                "null",
+                "boolean"
+            ]
+        },
+        "view_id": {
+            "type": [
+                "null",
+                "string"
+            ]
+        },
+        "video_id": {
+            "type": [
+                "null",
+                "string"
+            ]
+        },
+        "url": {
+            "type": [
+                "null",
+                "string"
+            ]
+        },
+        "viewer_id": {
+            "type": [
+                "null",
+                "string"
+            ]
+        },
+        "created_at": {
+            "type": [
+                "null",
+                "string"
+            ],
+            "format": "date-time"
+        },
+        "updated_at": {
+            "type": [
+                "null",
+                "string"
+            ],
+            "format": "date-time"
+        },
+        "group_id": {
+            "type": [
+                "null",
+                "string"
+            ]
+        },
+        "variables": {
+            "type": [
+                "null",
+                "object"
+            ],
+            "properties": {
+                "fullscreen": {
+                    "type": [
+                        "null",
+                        "string"
+                    ]
+                }
+            }
+        },
+        "export_count": {
+            "type": [
+                "null",
+                "integer"
+            ]
+        },
+        "video_owner_id": {
+            "type": [
+                "null",
+                "string"
+            ]
+        }
+    },
+    "key_properties": [
+        "id"
+    ]
+}

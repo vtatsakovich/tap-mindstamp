@@ -1,0 +1,251 @@
+{
+	"type": [
+		"null",
+		"object"
+	],
+	"selected": true,
+	"additionalProperties": false,
+	"properties": {
+		"id": {
+			"type": [
+				"null",
+				"string"
+			]
+		},
+		"owner_id": {
+		  "type": [
+			"null",
+			"string"
+		  ]
+		},
+		"video_id": {
+		  "type": [
+			"null",
+			"string"
+		  ]
+		},
+		"video_token": {
+		  "type": [
+			"null",
+			"string"
+		  ]
+		},
+		"video_title": {
+		  "type": [
+			"null",
+			"string"
+		  ]
+		},
+		"started": {
+		  "type": [
+			"null",
+			"string"
+		  ]
+		},
+		"finished": {
+		  "type": [
+			"null",
+			"string"
+		  ]
+		},
+		"elapsed": {
+		  "type": [
+			"null",
+			"integer"
+		  ]
+		},
+		"percentage": {
+		  "type": [
+			"null",
+			"integer"
+		  ]
+		},
+		"viewer_id": {
+		  "type": [
+			"null",
+			"string"
+		  ]
+		},
+		"viewer_name": {
+		  "type": [
+			"null",
+			"string"
+		  ]
+		},
+		"viewer_email": {
+		  "type": [
+			"null",
+			"string"
+		  ]
+		},
+		"viewer_phone": {
+		  "type": [
+			"null",
+			"string"
+		  ]
+		},
+		"viewer_custom_id": {
+		  "type": [
+			"null",
+			"string"
+		  ]
+		},
+		"interaction_count": {
+		  "type": [
+			"null",
+			"integer"
+		  ]
+		},
+		"city": {
+		  "type": [
+			"null",
+			"string"
+		  ]
+		},
+		"region": {
+		  "type": [
+			"null",
+			"string"
+		  ]
+		},
+		"country": {
+		  "type": [
+			"null",
+			"string"
+		  ]
+		},
+		"flag": {
+		  "type": [
+			"null",
+			"string"
+		  ]
+		},
+		"url": {
+		  "type": [
+			"null",
+			"string"
+		  ]
+		},
+		"browser": {
+		  "type": [
+			"null",
+			"string"
+		  ]
+		},
+		"screen_width": {
+		  "type": [
+			"null",
+			"string"
+		  ]
+		},
+		"screen_height": {
+		  "type": [
+			"null",
+			"string"
+		  ]
+		},
+		"participation": {
+		  "type": [
+			"null",
+			"integer"
+		  ]
+		},
+		"correctness": {
+		  "type": [
+			"null",
+			"integer"
+		  ]
+		},
+		"plink_id": {
+		  "type": [
+			"null",
+			"string"
+		  ]
+		},
+		"tag1": {
+		  "type": [
+			"null",
+			"string"
+		  ]
+		},
+		"tag2": {
+		  "type": [
+			"null",
+			"string"
+		  ]
+		},
+		"tag3": {
+		  "type": [
+			"null",
+			"string"
+		  ]
+		},
+		"tag4": {
+		  "type": [
+			"null",
+			"string"
+		  ]
+		},
+		"tag5": {
+		  "type": [
+			"null",
+			"string"
+		  ]
+		},
+		"group_id": {
+		  "type": [
+			"null",
+			"string"
+		  ]
+		},
+		"video_owner_id": {
+		  "type": [
+			"null",
+			"string"
+		  ]
+		},
+		"export_count": {
+		  "type": [
+			"null",
+			"integer"
+		  ]
+		},
+		"variables": {
+		  "type": [
+			"null",
+			"object"
+		  ],
+		  "properties": {
+			"fullscreen": {
+			  "type": [
+				"null",
+				"string"
+			  ]
+			},
+			"pScore": {
+			  "type": [
+				"null",
+				"string"
+			  ]
+			}
+		  }
+		},
+		"created_at": {
+		  "type": [
+			"null",
+			"string"
+		  ],
+		  "format": "date-time"
+		},
+		"updated_at": {
+			"type": [
+				"null",
+				"string"
+			],
+			"format": "date-time"
+		}
+	},
+	"key_properties": [
+		"id"
+	]
+}

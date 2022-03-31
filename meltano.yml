@@ -1,0 +1,15 @@
+version: 1
+send_anonymous_usage_stats: false
+project_id: tap-mindstamp
+plugins:
+  extractors:
+  - name: tap-mindstamp
+    namespace: tap_mindstamp
+    pip_url: ./tap-mindstamp.sh
+    capabilities:
+    - state
+    - catalog
+    - discover
+    settings:
+    - name: api_url
+    - name: api_key

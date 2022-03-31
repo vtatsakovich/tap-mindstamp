@@ -1,0 +1,69 @@
+{
+	"type": [
+		"null",
+		"object"
+	],
+	"selected": true,
+	"additionalProperties": false,
+	"properties": {
+		"id": {
+			"type": [
+				"null",
+				"string"
+			]
+		},
+		"name": {
+		  "type": [
+			"null",
+			"string"
+		  ]
+		},
+		"email": {
+		  "type": [
+			"null",
+			"string"
+		  ]
+		},
+		"phone": {
+		  "type": [
+			"null",
+			"string"
+		  ]
+		},
+		"owner_id": {
+		  "type": [
+			"null",
+			"string"
+		  ]
+		},
+		"user_id": {
+		  "type": [
+			"null",
+			"string"
+		  ]
+		},
+		"custom_id": {
+		  "type": [
+			"null",
+			"string"
+		  ]
+		},
+		"created_at": {
+		  "type": [
+			"null",
+			"string"
+		  ],
+		  "format": "date-time"
+		},
+		"updated_at": {
+		  "type": [
+			"null",
+			"string"
+		  ],
+		  "format": "date-time"
+		}
+	},
+	"key_properties": [
+		"id"
+	]
+}
