@@ -54,6 +54,12 @@
 			"integer"
 		  ]
 		},
+		"watched": {
+		  "type": [
+			"null",
+			"integer"
+		  ]
+		},
 		"percentage": {
 		  "type": [
 			"null",
