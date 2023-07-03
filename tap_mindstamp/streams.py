@@ -14,23 +14,23 @@ class VideosStream(MindstampStream):
     replication_key = "updated_at"
     schema_filepath = SCHEMAS_DIR / "videos.json"
     has_pagination = False
-
-class InteractionsStream(MindstampStream):
-    """Define custom stream."""
-    name = "interactions"
-    path = "/interactions"
-    primary_keys = ["id"]
-    replication_key = "updated_at"
-    schema_filepath = SCHEMAS_DIR / "interactions.json"
-
-class ViewersStream(MindstampStream):
-    """Define custom stream."""
-    name = "viewers"
-    path = "/viewers"
-    primary_keys = ["id"]
-    replication_key = "updated_at"
-    schema_filepath = SCHEMAS_DIR / "viewers.json"
-    has_pagination = False
+#
+# class InteractionsStream(MindstampStream):
+#     """Define custom stream."""
+#     name = "interactions"
+#     path = "/interactions"
+#     primary_keys = ["id"]
+#     replication_key = "updated_at"
+#     schema_filepath = SCHEMAS_DIR / "interactions.json"
+#
+# class ViewersStream(MindstampStream):
+#     """Define custom stream."""
+#     name = "viewers"
+#     path = "/viewers"
+#     primary_keys = ["id"]
+#     replication_key = "updated_at"
+#     schema_filepath = SCHEMAS_DIR / "viewers.json"
+#     has_pagination = False
 
 class ViewsStream(MindstampStream):
     """Define custom stream."""

@@ -1,8 +1,8 @@
 [tool.poetry]
 name = "tap-mindstamp"
-version = "1.0.2"
+version = "1.0.3"
 description = "`tap-mindstamp` is a Singer tap for Mindstamp, built with the Meltano SDK for Singer Taps."
-authors = ["Manuel Apilongo"]
+authors = ["Manuel Apilongo", "Volodymyr Tatsakovych"]
 keywords = [
     "ELT",
     "Mindstamp",

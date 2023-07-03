@@ -8,15 +8,15 @@ from singer_sdk import typing as th
 from tap_mindstamp.streams import (
     MindstampStream,
     VideosStream,
-    InteractionsStream,
-    ViewersStream,
+    # InteractionsStream,
+    # ViewersStream,
     ViewsStream
 )
 
 STREAM_TYPES = [
     VideosStream,
-    InteractionsStream,
-    ViewersStream,
+    # InteractionsStream,
+    # ViewersStream,
     ViewsStream
 ]
 

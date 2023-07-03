@@ -1,6 +1,6 @@
 # Secrets and internal config files
 **/.secrets/*
-
+.idea
 # Ignore meltano internal cache and sqlite systemdb
 
 .meltano/
