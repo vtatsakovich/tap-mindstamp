@@ -7,6 +7,7 @@ import singer
 import requests
 from singer_sdk.authenticators import BearerTokenAuthenticator
 from singer_sdk.streams import RESTStream
+from singer_sdk.helpers.jsonpath import extract_jsonpath
 
 SCHEMAS_DIR = Path(__file__).parent / Path("./schemas")
 LOGGER = singer.get_logger()
@@ -52,6 +53,11 @@ class MindstampStream(RESTStream):
             return previous_token + self.limit
 
         return None
+
+    def parse_response(self, response: requests.Response):
+        filtered_array = list(filter(lambda item: item, response.json()))
+
+        yield from extract_jsonpath(self.records_jsonpath, input=filtered_array)
 
     def get_url_params(
             self, context: Optional[dict], next_page_token: Optional[Any]
