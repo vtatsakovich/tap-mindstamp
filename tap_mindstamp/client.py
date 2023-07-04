@@ -43,8 +43,6 @@ class MindstampStream(RESTStream):
 
         data = response.json()
 
-        LOGGER.info('Got %d results: ', len(data))
-
         if not data:
             return None
 
@@ -65,6 +63,7 @@ class MindstampStream(RESTStream):
         if next_page_token:
             params["offset"] = next_page_token
 
-        LOGGER.info('Applied params: %d: ', params)
+        LOGGER.info('Applied params: ')
+        LOGGER.info(params)
 
         return params
