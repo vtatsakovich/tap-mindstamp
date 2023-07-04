@@ -3,11 +3,13 @@
 from pathlib import Path
 from typing import Any, Dict, Optional
 
+import singer
 import requests
 from singer_sdk.authenticators import BearerTokenAuthenticator
 from singer_sdk.streams import RESTStream
 
 SCHEMAS_DIR = Path(__file__).parent / Path("./schemas")
+LOGGER = singer.get_logger()
 
 
 class MindstampStream(RESTStream):
@@ -22,7 +24,7 @@ class MindstampStream(RESTStream):
 
     records_jsonpath = "$[*]"
     has_pagination = True
-    limit = 1000 if has_pagination else None
+    limit = 100 if has_pagination else None
 
     @property
     def authenticator(self) -> BearerTokenAuthenticator:
@@ -33,16 +35,19 @@ class MindstampStream(RESTStream):
         )
 
     def get_next_page_token(
-        self, response: requests.Response, previous_token: Optional[Any]
+            self, response: requests.Response, previous_token: Optional[Any]
     ) -> Optional[Any]:
         """Return a token for identifying next page or None if no more pages."""
         if response is None:
             return None
 
         data = response.json()
+
+        LOGGER.info('Got %d results: ', len(data))
+
         if not data:
             return None
-        
+
         if self.has_pagination:
             previous_token = previous_token or 0
 
@@ -51,7 +56,7 @@ class MindstampStream(RESTStream):
         return None
 
     def get_url_params(
-        self, context: Optional[dict], next_page_token: Optional[Any]
+            self, context: Optional[dict], next_page_token: Optional[Any]
     ) -> Dict[str, Any]:
         """Return a dictionary of values to be used in URL parameterization."""
         params: dict = {}
@@ -59,5 +64,7 @@ class MindstampStream(RESTStream):
             params["limit"] = self.limit
         if next_page_token:
             params["offset"] = next_page_token
+
+        LOGGER.info('Applied params: %d: ', params)
 
         return params
